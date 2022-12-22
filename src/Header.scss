@@ -1,0 +1,23 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.Header{
+    &__top{
+        padding: 16px;
+        background-color: #3f271e;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        .social{
+            font-size: 24px;
+            display: flex;
+            gap: 20px;
+
+        }
+    }
+    &__nav{
+        background-color: rgb($color,#000000, $alpha);
+    }
+}
