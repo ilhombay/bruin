@@ -8,7 +8,9 @@ import logo from "./img/png.webp"
 
 
 
-export default function Header() {
+export default function Header({scroll}) {
+  
+
   return (
     <div className='Header'>
         
@@ -23,10 +25,21 @@ export default function Header() {
         </div>
         </div>
       </div>
-      <div className="Header__nav">
+      <div className={`Header__nav${scroll > 200 ? "-fixed":""}` }>
         <div className="container">
         <img src={logo} alt="" />
-        <div></div>
+        <div className='nav'>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Menu</li>
+            <li>Services</li>
+            <li>Pages</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+          <button>Book a table</button>
+        </div>
         </div>
       </div>
       

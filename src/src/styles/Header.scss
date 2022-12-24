@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "myfont";
+    src: url(./fonst/caudex/Caudex-Regular.ttf);
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: myfont;
+}
+
+.Header{
+    background: #3f271e;
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+    &__top{
+        
+        &>.container{
+        padding: 16px;
+        background: #3f271e;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        .social{
+            font-size: 24px;
+            display: flex;
+            gap: 20px;
+            
+        }
+    }
+    }
+    &__nav-fixed{
+
+        position: fixed;
+        top: 0;
+        background: #3f271e;
+        color: white;
+        width: 100%;
+        &>.container{
+            display: flex;
+            justify-content: space-between;
+        img{
+            width: 80px;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            ul{
+                display: flex;
+                gap: 30px;
+                
+                li{
+                    list-style: none;
+                    font-size: 20px;
+                }
+            }
+            button{
+                background: #6f3727;
+                font-size: 16px;
+                text-transform: uppercase;
+                border: none;
+                color: #fff;
+                padding: 20px 30px;
+                position: relative;
+                border-radius: 4px;
+                &:hover{
+                    background-color:#3f271e ;
+                }
+            }
+        }
+        
+    }
+
+    }
+    &__nav{
+        
+        background-color: rgba($color: #000000, $alpha: .5) ;
+        color: white;
+        &>.container{
+            display: flex;
+            justify-content: space-between;
+        img{
+            width: 80px;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            ul{
+                display: flex;
+                gap: 30px;
+                
+                li{
+                    list-style: none;
+                    font-size: 20px;
+                }
+            }
+            button{
+                background: #6f3727;
+                font-size: 16px;
+                text-transform: uppercase;
+                border: none;
+                color: #fff;
+                padding: 20px 30px;
+                position: relative;
+                border-radius: 4px;
+                &:hover{
+                    background-color:#3f271e ;
+                }
+            }
+        }
+        
+    }
+    }
+    
+    
+}
